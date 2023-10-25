@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `commande` (
   `date_achat` date NOT NULL,
   `reference` varchar(50) NOT NULL,
   `cache_prix_total` float NOT NULL,
-  PRIMARY KEY (`id_commande`)
+  PRIMARY KEY (`id_commande`),
   FOREIGN KEY(`id_client`) REFERENCES client(`id_client`)
 ) ENGINE=MyISAM AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 
