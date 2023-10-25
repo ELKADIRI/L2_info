@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `commande_ligne` (
   `quantite` int(10) UNSIGNED NOT NULL,
   `prix_unitaire` float UNSIGNED NOT NULL,
   `prix_total` float UNSIGNED NOT NULL,
-  PRIMARY KEY (`id_commande_ligne`)
+  PRIMARY KEY (`id_commande_ligne`),
   FOREIGN KEY(`id_commande`) REFERENCES commande(`id_commande`)
 ) ENGINE=MyISAM AUTO_INCREMENT=121 DEFAULT CHARSET=utf8;
 
